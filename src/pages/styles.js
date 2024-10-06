@@ -4,32 +4,36 @@ import styled from 'styled-components/native';
 export const Container = styled.View`
   flex: 1;
   padding: 30px;
+  background-color: #1e1e1e; 
 `;
 
 export const Form = styled.View`
   flex-direction: row;
   padding-bottom: 20px;
   border-bottom-width: 1px;
-  border-color: #555;
+  border-color: #4f4f4f;
 `;
 
 export const Input = styled.TextInput.attrs({
-  placeholderTextColor: '#999',
+  placeholderTextColor: '#c9c9c9',  /* Cinza claro */
 })`
   flex: 1;
   height: 40px;
-  background: #eee;
-  border: 1px solid #888;
+  background: #2c3e50; 
+  border: 1px solid #8e44ad;  
   border-radius: 5px;
   padding: 0 15px;
+  color: #fff; 
 `;
 
 export const SubmitButton = styled(RectButton)`
+  height: 40px;
   justify-content: center;
   align-items: center;
-  background: #3498db;
+  background: #3498db; 
   margin-left: 10px;
   padding: 0 12px;
+  border-radius: 15px;
   opacity: ${props => (props.loading ? 0.7 : 1)};
 `;
 
@@ -37,43 +41,53 @@ export const List = styled.FlatList`
   margin-top: 20px;
 `;
 
-export const User = styled.View`
+export const Character = styled.View`
   align-items: center;
-  margin: 0 20px 30px;
+  margin: 0 10px 15px;
+  display: flex;
+  flex-direction: column;
+`;
+
+export const View = styled.View`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 `;
 
 export const Avatar = styled.Image`
-  width: 64px;
-  height: 64px;
-  border-radius: 32px;
-  background: #eee;
+  margin-top: 10px;
+  width: 120px;
+  height: 120px;
+  border-radius: 4px;
+  background: #16a085; 
 `;
 
 export const Name = styled.Text`
   font-size: 14px;
-  color: #333;
+  color: #f1c40f;
   font-weight: bold;
   margin-top: 4px;
   text-align: center;
 `;
 
-export const Bio = styled.Text.attrs({
-  numberOfLines: 2,
-})`
+export const Status = styled.Text`
   font-size: 13px;
   line-height: 18px;
-  color: #999;
+  color: #ecf0f1;
   margin-top: 5px;
   text-align: center;
 `;
 
 export const ProfileButton = styled(RectButton)`
   margin-top: 10px;
-  align-self: stretch;
-  background-color: #3498db;
+  margin-bottom: 5px;
+  background-color: #3498db; 
   justify-content: center;
   align-items: center;
-  height: 36px;
+  height: 20px;
+  width: 100px;
+  border-radius: 5px;
 `;
 
 export const ProfileButtonText = styled.Text`
@@ -83,72 +97,56 @@ export const ProfileButtonText = styled.Text`
   text-transform: uppercase;
 `;
 
-export const Stars = styled.FlatList.attrs({
-  showsVerticalScrollIndicator: false,
-})`
-  margin-top: 20px;
-`;
-
-export const Starred = styled.View`
-  background: #f5f5f5;
-  border-radius: 4px;
-  padding: 10px 15px;
-  margin-bottom: 20px;
-  flex-direction: row;
-  align-items: center;
-`;
-
-export const OwnerAvatar = styled.Image`
-  width: 42px;
-  height: 42px;
-  border-radius: 21px;
-  background: #eee;
-`;
-
-export const Info = styled.View`
-  margin-left: 10px;
-  flex: 1;
-`;
-
-export const Title = styled.Text.attrs({
-  numberOfLines: 1,
-})`
-  font-size: 15px;
-  font-weight: bold;
-  color: #333;
-`;
-
-export const Author = styled.Text`
+export const Location = styled.Text`
   font-size: 13px;
-  color: #666;
-  margin-top: 2px;
-`;
-
-export const Header = styled.View`
-  padding-top: 30px;
-  align-items: center;
-  justify-content: center;
-`;
-
-export const Avatarperfil = styled.Image`
-  width: 100px;
-  height: 100px;
-  border-radius: 50px;
-  background: #eee;
-`;
-
-export const Nameperfil = styled.Text`
-  font-size: 16px;
-  color: #333;
-  font-weight: bold;
-  margin-top: 4px;
+  line-height: 18px;
+  color: #9b59b6; 
+  margin-top: 5px;
   text-align: center;
 `;
 
-export const Bioperfil = styled.Text`
-  font-size: 15px;
+export const Episode = styled.Text`
+  font-size: 13px;
   line-height: 18px;
-  color: #999;
+  color: #e74c3c;
   margin-top: 5px;
+  text-align: center;
+`;
+
+export const NameDetails = styled.Text`
+  font-size: 20px;
+  color: #f1c40f;
+  font-weight: bold;
+  text-align: center;
+`;
+
+export const EpisodeDetails = styled.Text`
+  font-size: 18px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 10px;
+`;
+
+export const LocationDetails = styled.Text`
+  font-size: 18px;
+  color: #8e44ad;
+  text-align: center;
+`;
+
+export const StatusDetails = styled.Text`
+  font-size: 18px;
+  color: #3498db;
+  text-align: center;
+`;
+
+export const SpeciesDetails = styled.Text`
+  font-size: 18px;
+  color: #e74c3c;
+  text-align: center;
+`;
+
+export const GenderDetails = styled.Text`
+  font-size: 18px;
+  color: #3498db;
   text-align: center;
 `;
