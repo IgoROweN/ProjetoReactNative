@@ -1,3 +1,38 @@
+# Rick and Morty Viewer
+
+Este é um projeto desenvolvido para visualizar personagens da série animada "Rick and Morty". Utilizando a API pública da série, os usuários podem buscar e visualizar detalhes sobre diferentes personagens, incluindo informações como nome, status, espécie, localização e episódios em que aparecem.
+
+## Desenvolvedor
+**Igor Owen**
+
+## Tecnologias Utilizadas
+- **React Native**: Para o desenvolvimento do aplicativo móvel.
+- **Axios**: Para realizar requisições à API.
+- **Styled Components**: Para estilização dos componentes da aplicação.
+- **AsyncStorage**: Para armazenamento local de dados.
+
+## Funcionalidades
+- Tela de **Login**: Permite o acesso ao aplicativo.
+- Tela de **Cadastro**: Permite que novos usuários se cadastrem.
+- Tela de **Cards**: Visualiza todos os personagens adicionados.
+- Tela de **Detalhes**: Exibe informações detalhadas sobre cada personagem, incluindo:
+  - Nome
+  - Status
+  - Espécie
+  - Gênero
+  - Última localização conhecida
+  - Episódios em que o personagem aparece
+
+## Instruções de Instalação
+
+Para instalar e executar o projeto, siga as instruções abaixo:
+
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/seu_usuario/rick-and-morty-viewer.git
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
 # Getting Started
